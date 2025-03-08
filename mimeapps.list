@@ -1,0 +1,23 @@
+[Default Applications]
+x-scheme-handler/http=userapp-Zen-CPU122.desktop
+x-scheme-handler/https=userapp-Zen-CPU122.desktop
+x-scheme-handler/chrome=userapp-Zen-CPU122.desktop
+text/html=userapp-Zen-CPU122.desktop
+application/x-extension-htm=userapp-Zen-CPU122.desktop
+application/x-extension-html=userapp-Zen-CPU122.desktop
+application/x-extension-shtml=userapp-Zen-CPU122.desktop
+application/xhtml+xml=userapp-Zen-CPU122.desktop
+application/x-extension-xhtml=userapp-Zen-CPU122.desktop
+application/x-extension-xht=userapp-Zen-CPU122.desktop
+
+[Added Associations]
+x-scheme-handler/http=userapp-Zen-CZ4M22.desktop;userapp-Zen-CPU122.desktop;
+x-scheme-handler/https=userapp-Zen-CZ4M22.desktop;userapp-Zen-CPU122.desktop;
+x-scheme-handler/chrome=userapp-Zen-CZ4M22.desktop;userapp-Zen-CPU122.desktop;
+text/html=userapp-Zen-CZ4M22.desktop;userapp-Zen-CPU122.desktop;
+application/x-extension-htm=userapp-Zen-CZ4M22.desktop;userapp-Zen-CPU122.desktop;
+application/x-extension-html=userapp-Zen-CZ4M22.desktop;userapp-Zen-CPU122.desktop;
+application/x-extension-shtml=userapp-Zen-CZ4M22.desktop;userapp-Zen-CPU122.desktop;
+application/xhtml+xml=userapp-Zen-CZ4M22.desktop;userapp-Zen-CPU122.desktop;
+application/x-extension-xhtml=userapp-Zen-CZ4M22.desktop;userapp-Zen-CPU122.desktop;
+application/x-extension-xht=userapp-Zen-CZ4M22.desktop;userapp-Zen-CPU122.desktop;
