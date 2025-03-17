@@ -19,3 +19,7 @@ alias ck="vim ~/.config/kitty/kitty.conf"
 alias repo="cd /opt/repos"
 alias rh="cd /opt/repos/hyprland"
 alias fetch="clear && fastfetch"
+
+# Graphics
+export WLR_RENDERER=vulcan
+export LIBVA_DRIVER_NAME=v3d
