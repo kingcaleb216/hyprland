@@ -9,7 +9,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
-# User defined aliases
+# User aliases
 alias ll="ls -la"
 alias bashrc="vim ~/.bashrc && source ~/.bashrc"
 alias ch="vim ~/.config/hypr/hyprland.conf"
@@ -19,6 +19,13 @@ alias ck="vim ~/.config/kitty/kitty.conf"
 alias repo="cd /opt/repos"
 alias rh="cd /opt/repos/hyprland"
 alias fetch="clear && fastfetch"
+
+# User functions
+function cd()
+{
+   builtin cd $1
+   ll
+}
 
 # Graphics
 export WLR_RENDERER=vulcan
