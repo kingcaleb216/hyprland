@@ -111,7 +111,7 @@
         "spacing": 10
     },
     "custom/kernel": {
-        "format": "🧠 {}",
+        "format": "{} 🧠",
         "exec": "uname -r",
         "interval": 60
     },
