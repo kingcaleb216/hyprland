@@ -7,7 +7,7 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-PS1='[\u@\h \W]\$ '
+PS1='\e[0;34m󰣇  \u \W >\e[0m '
 
 # User aliases
 alias ll="ls -la"

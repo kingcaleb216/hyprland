@@ -14,7 +14,9 @@
         "custom/media"
     ],
     "modules-center": [
-        "hyprland/window"
+        //"hyprland/window"
+        //"clock",
+	"custom/calendar"
     ],
     "modules-right": [
         //"mpd",
@@ -27,11 +29,11 @@
         "memory",
         "temperature",
         //"backlight",
-        "keyboard-state",
-        //"hyprland/language",
+        //"keyboard-state",
+        "hyprland/language"
         //"battery",
         //"battery#bat2",
-        "clock"
+        //"clock"
         //"tray",
         //"custom/power"
     ],
@@ -120,6 +122,12 @@
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
+    "custom/calendar": {
+        "format": "{}",
+        "exec": "date +\"%b %d %H:%M:%S\"",
+	"interval": 1,
+        // "on-click": "cal | rofi -dmenu -p \"Calendar\" -theme ~/.config/rofi/theme.rasi -config ~/.config/rofi/config.rasi"
+    },
     "cpu": {
         "format": "{usage}% ",
         "tooltip": false
@@ -172,7 +180,7 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
+        "format-ethernet": "Connected ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
