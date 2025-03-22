@@ -16,13 +16,13 @@
     ],
     "modules-right": [
         "custom/kernel",
-        //"custom/packages",
+        "custom/packages",
         "pulseaudio",
         "network",
+        //"hyprland/language",
         "cpu",
         "memory",
-        "temperature",
-        "hyprland/language"
+        "temperature"
     ],
     // Modules configuration
     "hyprland/workspaces": {
@@ -48,8 +48,8 @@
         "interval": 60
     },
     "custom/packages": {
-        "format": "{} ",
-        "exec": "sudo pacman -Sy --dbonly > /dev/null && pacman -Qu | wc -l",
+        "format": "{} ",
+        "exec": "[[ -f $HOME/.cache/pkg_updates ]] && cat $HOME/.cache/pkg_updates || echo 0",
         "interval": 60
     },
     "custom/calendar": {

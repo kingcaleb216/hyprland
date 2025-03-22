@@ -53,6 +53,7 @@ setLink "$HOME/.config/waybar"
 setLink "$HOME/.config/kitty"
 setLink "$HOME/.config/rofi"
 setLink "$HOME/.config/swww"
+setLink "$HOME/.config/systemd"
 setLink "$HOME/.bashrc"
 
 # If running Arch

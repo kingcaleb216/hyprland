@@ -1,0 +1,7 @@
+[Unit]
+Description=Check and cache Arch repo updates
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c 'checkupdates | wc -l > $HOME/.cache/pkg_updates 2>/dev/null'
+
