@@ -14,15 +14,6 @@ window#waybar.hidden {
     opacity: 0.2;
 }
 
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
-
 window#waybar.termite {
     background-color: #3F3F3F;
 }
@@ -33,19 +24,15 @@ window#waybar.chromium {
 }
 
 button {
-    /* Use box-shadow instead of border so the text isn't offset */
     box-shadow: inset 0 -3px transparent;
-    /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 0;
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* you can set a style on hover for any module like this */
 #pulseaudio:hover {
     background-color: rgba(0, 0, 0, 0.4);
 }
@@ -75,27 +62,17 @@ button:hover {
 }
 
 #custom-calendar,
-#battery,
+#custom-kernel,
+#custom-package,
 #cpu,
 #memory,
-#disk,
 #temperature,
-#backlight,
 #network,
-#pulseaudio,
-#wireplumber,
-#custom-media,
-#tray,
-#mode,
-#idle_inhibitor,
-#scratchpad,
-#power-profiles-daemon,
-#mpd {
-    padding: 0 8px;
+#pulseaudio {
+    padding: 0 10px;
     color: #ffffff;
 }
 
-#window,
 #workspaces {
     margin: 0 4px;
 }
@@ -111,92 +88,19 @@ button:hover {
 }
 
 #custom-calendar {
-    color: #6eb9c2;
-}
-
-#battery {
-    background-color: #ffffff;
-    color: #000000;
-}
-
-#battery.charging, #battery.plugged {
     color: #ffffff;
-    background-color: #26A65B;
-}
-
-@keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: #000000;
-    }
-}
-
-/* Using steps() instead of linear as a timing function to limit cpu usage */
-#battery.critical:not(.charging) {
-    background-color: #f53c3c;
-    color: #ffffff;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: steps(12);
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-#power-profiles-daemon {
-    padding-right: 15px;
-}
-
-#power-profiles-daemon.performance {
-    background-color: #f53c3c;
-    color: #ffffff;
-}
-
-#power-profiles-daemon.balanced {
-    background-color: #2980b9;
-    color: #ffffff;
-}
-
-#power-profiles-daemon.power-saver {
-    background-color: #2ecc71;
-    color: #000000;
 }
 
 label:focus {
     background-color: #000000;
 }
-/*
-#memory,
-#disk,
-#network,
-#network.disconnected,
-#pulseaudio,
-#pulseaudio.muted,
-#temperature,
-#temperature.critical,
-#tray,
-#scratchpad,
-#backlight,
-#wireplumber,
-#wireplumber.muted,
-#custom-media,
-#custom-media.custom-spotify,
-#custom-media.custom-vlc,
-#custom-kernel,
-#mpd,
-#mpd.disconnnected,
-#cpu {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-#keyboard-state,
-#clock,
-#language {
-    background: rgba(0, 0, 0, 0.5);
-}
-*/
 
 #custom-kernel {
     color: #ed6c5a;
+}
+
+#custom-packages {
+    color: #6eb9c2;
 }
 
 #cpu {
@@ -205,10 +109,6 @@ label:focus {
 
 #memory {
     color: #a982b8;
-}
-
-#disk {
-    color: #964B00;
 }
 
 #network {
@@ -227,58 +127,12 @@ label:focus {
     color: #90b1b1;
 }
 
-#wireplumber {
-    color: #000000;
-}
-
-#custom-media {
-    color: #2a5c45;
-    min-width: 100px;
-}
-
 #temperature {
     color: #d9ac79;
 }
 
 #temperature.critical {
     color: #eb4d4b;
-}
-
-#tray {
-    color: #2980b9;
-}
-
-#tray > .passive {
-    -gtk-icon-effect: dim;
-}
-
-#tray > .needs-attention {
-    -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
-}
-
-#idle_inhibitor {
-    background-color: #2d3436;
-}
-
-#idle_inhibitor.activated {
-    color: #2d3436;
-}
-
-#mpd {
-    color: #2a5c45;
-}
-
-#mpd.disconnected {
-    background-color: #f53c3c;
-}
-
-#mpd.stopped {
-    background-color: #90b1b1;
-}
-
-#mpd.paused {
-    background-color: #51a37a;
 }
 
 #language {
@@ -288,38 +142,3 @@ label:focus {
     min-width: 16px;
 }
 
-#keyboard-state {
-    color: #97e1ad;
-    padding: 0 0px;
-    margin: 0 0px;
-    min-width: 16px;
-}
-
-#keyboard-state > label {
-    padding: 0 0px;
-}
-
-#scratchpad.empty {
-	background-color: transparent;
-}
-
-#privacy {
-    padding: 0;
-}
-
-#privacy-item {
-    padding: 0 5px;
-    color: white;
-}
-
-#privacy-item.screenshare {
-    background-color: #cf5700;
-}
-
-#privacy-item.audio-in {
-    background-color: #1ca000;
-}
-
-#privacy-item.audio-out {
-    background-color: #0069d4;
-}
