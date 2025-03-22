@@ -53,7 +53,6 @@ setLink "$HOME/.config/waybar"
 setLink "$HOME/.config/kitty"
 setLink "$HOME/.config/rofi"
 setLink "$HOME/.config/swww"
-setLink "/etc/pacman.d/hooks"
 setLink "$HOME/.bashrc"
 
 # If running Arch
@@ -62,6 +61,8 @@ then
    # If the -l flag has not been set
    if ! [[ $1 == "-l" ]]
    then
+      setLink "/etc/pacman.d/hooks"
+
       # Update system and install packages
       sudo pacman -Syu --needed --noconfirm $(cat $repo/archPackages)
    fi
