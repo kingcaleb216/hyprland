@@ -88,58 +88,51 @@ button:hover {
     margin-right: 0;
 }
 
-#custom-calendar {
-    color: #ffffff;
-}
-
 label:focus {
     background-color: #000000;
 }
 
+#custom-calendar {
+    color: #ebebeb;
+}
+
 #custom-kernel {
-    color: #ed6c5a;
+    color: #ba5d6a;
 }
 
 #custom-packages {
-    color: #6eb9c2;
+    color: #5aabac;
 }
 
 #cpu {
-    color: #82cfa6;
+    color: #74b55a;
 }
 
 #memory {
-    color: #a982b8;
+    color: #ab83b2;
 }
 
 #network {
-    color: #728fd4;
+    color: #5894c3;
 }
 
 #network.disconnected {
-    color: #f53c3c;
+    color: #d37786;
 }
 
 #pulseaudio {
-    color: #d1c079;
+    color: #bca85d;
 }
 
 #pulseaudio.muted {
-    color: #90b1b1;
+    color: #7cd1d2;
 }
 
 #temperature {
-    color: #d9ac79;
+    color: #e6d178;
 }
 
 #temperature.critical {
-    color: #eb4d4b;
-}
-
-#language {
-    color: #64a371;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
+    color: #d37786;   
 }
 
