@@ -2,7 +2,9 @@ archlinux-keyring
 base
 base-devel
 bat
+bc
 btop
+calc
 cpupower
 dhcpcd
 dialog
@@ -14,6 +16,7 @@ git
 htop
 hyprland
 iwd
+jq
 kitty
 logrotate
 man-db

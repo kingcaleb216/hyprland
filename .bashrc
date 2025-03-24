@@ -5,6 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+shopt -s expand_aliases
+
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='\e[0;34m󰣇  \u \W >\e[0m '
@@ -20,6 +22,12 @@ alias repo="cd /opt/repos"
 alias rh="cd /opt/repos/hyprland"
 alias fetch="clear && fastfetch"
 alias htop="btop"
+
+alias dwight="~/.config/asciiArt/asciiArt.sh dwight"
+alias catbox="~/.config/asciiArt/asciiArt.sh catBox"
+alias deer="~/.config/asciiArt/asciiArt.sh deer"
+alias squirrel="~/.config/asciiArt/asciiArt.sh deer"
+alias ascii="~/.config/asciiArt/asciiArt.sh"
 
 # User functions
 function cd()
