@@ -27,6 +27,8 @@ alias dwight="~/.config/asciiArt/asciiArt.sh dwight"
 alias catbox="~/.config/asciiArt/asciiArt.sh catBox"
 alias deer="~/.config/asciiArt/asciiArt.sh deer"
 alias squirrel="~/.config/asciiArt/asciiArt.sh deer"
+alias ridgecrest="~/.config/asciiArt/asciiArt.sh ridgecrest"
+alias arch="~/.config/asciiArt/asciiArt.sh arch"
 alias ascii="~/.config/asciiArt/asciiArt.sh"
 
 # User functions

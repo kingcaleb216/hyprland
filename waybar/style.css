@@ -97,42 +97,42 @@ label:focus {
 }
 
 #custom-kernel {
-    color: #ba5d6a;
+    color: #9e5559;
 }
 
 #custom-packages {
-    color: #5aabac;
+    color: #4c8a8a;
 }
 
 #cpu {
-    color: #74b55a;
+    color: #6d9e4e;
 }
 
 #memory {
-    color: #ab83b2;
+    color: #8d6a91;
 }
 
 #network {
-    color: #5894c3;
+    color: #54789f;
 }
 
 #network.disconnected {
-    color: #d37786;
+    color: #b3626e;
 }
 
 #pulseaudio {
-    color: #bca85d;
+    color: #9b8850;
 }
 
 #pulseaudio.muted {
-    color: #7cd1d2;
+    color: #60aaaa;
 }
 
 #temperature {
-    color: #e6d178;
+    color: #b9a95c;
 }
 
 #temperature.critical {
-    color: #d37786;   
+    color: #b3626e;
 }
 
