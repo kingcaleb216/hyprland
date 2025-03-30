@@ -1,3 +1,5 @@
+@import url("colors.css");
+
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
@@ -97,42 +99,42 @@ label:focus {
 }
 
 #custom-kernel {
-    color: #9e5559;
+    color: @red;
 }
 
 #custom-packages {
-    color: #4c8a8a;
+    color: @cyan;
 }
 
 #cpu {
-    color: #6d9e4e;
+    color: @green;
 }
 
 #memory {
-    color: #8d6a91;
+    color: @magenta;
 }
 
 #network {
-    color: #54789f;
+    color: @blue;
 }
 
 #network.disconnected {
-    color: #b3626e;
+    color: @light_red;
 }
 
 #pulseaudio {
-    color: #9b8850;
+    color: @light_yellow;
 }
 
 #pulseaudio.muted {
-    color: #60aaaa;
+    color: @light_cyan;
 }
 
 #temperature {
-    color: #b9a95c;
+    color: @light_yellow;
 }
 
 #temperature.critical {
-    color: #b3626e;
+    color: @light_red;
 }
 

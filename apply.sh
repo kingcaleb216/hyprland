@@ -55,6 +55,7 @@ setLink "$HOME/.config/rofi"
 setLink "$HOME/.config/swww"
 setLink "$HOME/.config/systemd"
 setLink "$HOME/.config/asciiArt"
+setLink "$HOME/.config/colors"
 setLink "$HOME/.bashrc"
 
 # If running Arch
