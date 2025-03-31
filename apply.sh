@@ -57,6 +57,7 @@ setLink "$HOME/.config/systemd"
 setLink "$HOME/.config/asciiArt"
 setLink "$HOME/.config/colors"
 setLink "$HOME/.bashrc"
+setLink "$HOME/.vimrc"
 
 # If running Arch
 if [[ $(cat /etc/os-release) =~ "Arch" ]]
