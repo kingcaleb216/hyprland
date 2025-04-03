@@ -26,7 +26,6 @@ alias vimrc="vim ~/.vimrc"
 alias repo="cd /opt/repos"
 alias rh="cd /opt/repos/hyprland"
 alias fetch="clear && fastfetch"
-alias htop="btop"
 
 # Config
 alias ch="vim ~/.config/hypr/hyprland.conf"
