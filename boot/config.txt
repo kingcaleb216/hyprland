@@ -1,9 +1,0 @@
-enable_uart=1
-dtoverlay=vc4-kms-v3d-pi5
-max_framebuffers=2
-os_check=0
-
-# Overclock settings
-arm_freq=2500
-gpu_freq=900
-over_voltage=6
